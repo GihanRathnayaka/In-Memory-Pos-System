@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.ParallelCamera?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="440.0" prefWidth="878.0" stylesheets="@style/HomePage.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijs.my.dep.pos.controler.HomePageControler" fx:id="A">
+   <children>
+      <Label alignment="CENTER" layoutX="135.0" layoutY="13.0" prefHeight="54.0" prefWidth="622.0" text="Point of Sale(POS )SYSTEM" textFill="#978d1c" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCustomer" layoutX="14.0" layoutY="237.0" mnemonicParsing="false" onAction="#onActionCustomerManage" prefHeight="70.0" prefWidth="204.0">
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="59.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/AddC.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="BtnItems" layoutX="226.0" layoutY="238.0" mnemonicParsing="false" onAction="#OnActionBtnItems" prefHeight="70.0" prefWidth="204.0">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/items.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="BtnPlaceOrder" layoutX="442.0" layoutY="238.0" mnemonicParsing="false" onAction="#OnActionBtnPlaceOrder" prefHeight="70.0" prefWidth="204.0">
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/PlaceOrder.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="BtnOrderView" layoutX="655.0" layoutY="238.0" mnemonicParsing="false" onAction="#OnActionBtnOderView" prefHeight="70.0" prefWidth="204.0">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/ViewOrder.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnExit" layoutX="7.0" layoutY="7.0" mnemonicParsing="false" onAction="#onActionExit" prefHeight="37.0" prefWidth="94.0" text="LogOut" textFill="#df0707">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="19.0" layoutY="317.0" prefHeight="38.0" prefWidth="194.0" text="Manage Customers">
+         <font>
+            <Font name="Book Antiqua Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="231.0" layoutY="317.0" prefHeight="38.0" prefWidth="194.0" text="Manage Items">
+         <font>
+            <Font name="Book Antiqua Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="451.0" layoutY="317.0" prefHeight="38.0" prefWidth="194.0" text="Place Order">
+         <font>
+            <Font name="Book Antiqua Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="660.0" layoutY="323.0" prefHeight="19.0" prefWidth="194.0" text="View Orders">
+         <font>
+            <Font name="Book Antiqua Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="709.0" layoutY="401.0" prefHeight="18.0" prefWidth="154.0" text="CreatedBy Gihan Rathnayka">
+         <font>
+            <Font name="Bodoni MT Black" size="10.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="227.0" layoutY="67.0" prefHeight="30.0" prefWidth="437.0" text="ABCD Company Privet limited">
+         <font>
+            <Font name="Bodoni MT Condensed Bold" size="25.0" />
+         </font>
+      </Label>
+      <ParallelCamera layoutX="150.0" layoutY="176.0" />
+      <ParallelCamera layoutX="174.0" layoutY="190.0" />
+      <Label fx:id="lblUser" layoutX="110.0" layoutY="397.0" prefHeight="30.0" prefWidth="305.0" text="-------------------------------------" textFill="#2bb5bc">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="395.0" prefHeight="25.0" prefWidth="85.0" text="User :">
+         <font>
+            <Font name="AkaashNormal" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnUserManage" layoutX="706.0" layoutY="14.0" mnemonicParsing="false" onAction="#OnActionbtnUserManage" prefHeight="62.0" prefWidth="161.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons8_Settings_48px_1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label alignment="CENTER" layoutX="710.0" layoutY="85.0" prefHeight="16.0" prefWidth="154.0" text="Setting">
+         <font>
+            <Font name="Droid Serif Bold Italic" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

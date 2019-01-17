@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="897.0" prefWidth="746.0" stylesheets="@../style/login/SuperUserAdministration.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijs.my.dep.pos.controler.LoginControler.SuperUserAdministration">
+   <children>
+      <Button fx:id="btnChange" layoutX="434.0" layoutY="259.0" mnemonicParsing="false" onAction="#OnActionBtnChange" prefHeight="36.0" prefWidth="126.0" text="Change">
+         <font>
+            <Font name="TSCu_Times" size="20.0" />
+         </font></Button>
+      <PasswordField fx:id="txtSuperUserNewPassword" layoutX="189.0" layoutY="156.0" prefHeight="45.0" prefWidth="370.0" />
+      <PasswordField fx:id="txtSuperUserConfirmPassword" layoutX="190.0" layoutY="206.0" prefHeight="45.0" prefWidth="370.0" />
+      <Label layoutX="114.0" layoutY="119.0" text="Password" />
+      <Label layoutX="83.0" layoutY="170.0" text="New PassWord" />
+      <Label layoutX="62.0" layoutY="221.0" text="ComfirmPassword" />
+      <PasswordField fx:id="txtSuperUserPassword" layoutX="189.0" layoutY="105.0" prefHeight="45.0" prefWidth="370.0">
+         <font>
+            <Font name="Noto Naskh Arabic Bold" size="13.0" />
+         </font></PasswordField>
+      <TextField fx:id="txtUserNameAdmin" layoutX="184.0" layoutY="417.0" prefHeight="45.0" prefWidth="370.0" />
+      <Separator layoutX="2.0" layoutY="325.0" prefHeight="2.0" prefWidth="745.0" />
+      <Label layoutX="39.0" layoutY="334.0" prefHeight="21.0" prefWidth="164.0" text="Admin Account " underline="true">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Button fx:id="btnNewAdmin" layoutX="56.0" layoutY="368.0" mnemonicParsing="false" onAction="#OnActionbtnNewAdmin" prefHeight="36.0" prefWidth="88.0" text="New" />
+      <PasswordField fx:id="txtAdminNewPassWord" layoutX="184.0" layoutY="468.0" prefHeight="45.0" prefWidth="370.0" />
+      <Button fx:id="btnAdminSave" layoutX="450.0" layoutY="579.0" mnemonicParsing="false" onAction="#OnActionbtnAdminSave" prefHeight="45.0" prefWidth="104.0" text="Save">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <TableView fx:id="tblAdminTable" layoutX="19.0" layoutY="671.0" prefHeight="209.0" prefWidth="713.0">
+        <columns>
+          <TableColumn prefWidth="121.0" text="User Type" />
+            <TableColumn fx:id="Password" prefWidth="160.0" text="Password" />
+            <TableColumn fx:id="Name" prefWidth="158.0" text="Name" />
+            <TableColumn fx:id="IsActive" prefWidth="137.0" text="Is Active" />
+            <TableColumn fx:id="Option" prefWidth="136.0" text="Option" />
+        </columns>
+      </TableView>
+      <PasswordField fx:id="txtAdminConfirmPassWord" layoutX="184.0" layoutY="521.0" prefHeight="45.0" prefWidth="370.0" />
+      <Label layoutX="106.0" layoutY="436.0" text="User Name" />
+      <Label layoutX="78.0" layoutY="484.0" text="New PassWord" />
+      <Label layoutX="57.0" layoutY="532.0" text="ComfirmPassword" />
+      <Separator layoutX="1.0" layoutY="636.0" prefHeight="16.0" prefWidth="745.0" />
+      <Label alignment="CENTER" layoutX="74.0" layoutY="9.0" prefHeight="70.0" prefWidth="571.0" text="Super User Controler" underline="true">
+         <font>
+            <Font name="Droid Arabic Kufi Bold" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="26.0" layoutY="18.0" mnemonicParsing="false" onAction="#OnActionbtnBack" prefHeight="26.0" prefWidth="88.0" text="Back">
+         <font>
+            <Font name="Droid Sans Hebrew" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="668.0" prefWidth="765.0" stylesheets="@style/Items.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijs.my.dep.pos.controler.ItemsControler">
+   <children>
+      <Label alignment="CENTER" layoutX="168.0" layoutY="8.0" prefHeight="50.0" prefWidth="440.0" text="Items Management" textFill="#0a6421" underline="true" wrapText="true">
+         <font>
+            <Font name="Californian FB Bold" size="39.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="648.0" layoutY="16.0" mnemonicParsing="false" onAction="#onActionbtnBack" prefHeight="34.0" prefWidth="102.0" text="Back" />
+      <Button fx:id="btnNewItem" layoutX="20.0" layoutY="77.0" mnemonicParsing="false" onAction="#OnActionbtnNewItem" prefHeight="34.0" prefWidth="137.0" text="New Item" textFill="#0c5c38">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Button>
+      <Label alignment="TOP_RIGHT" layoutX="69.0" layoutY="155.0" prefHeight="18.0" prefWidth="86.0" text="Code">
+         <font>
+            <Font name="Bodoni MT Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="69.0" layoutY="201.0" prefHeight="18.0" prefWidth="86.0" text="Description">
+         <font>
+            <Font name="Bodoni MT Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="69.0" layoutY="246.0" prefHeight="18.0" prefWidth="86.0" text="Unit Price">
+         <font>
+            <Font name="Bodoni MT Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCode" layoutX="165.0" layoutY="145.0" prefHeight="41.0" prefWidth="390.0" />
+      <TextField fx:id="txtDescription" layoutX="165.0" layoutY="191.0" prefHeight="41.0" prefWidth="390.0" />
+      <TextField fx:id="txtUnitePrice" layoutX="165.0" layoutY="238.0" onKeyPressed="#onKeyPressTxtUnitPrice" prefHeight="41.0" prefWidth="390.0" />
+      <Button fx:id="btnSave" layoutX="311.0" layoutY="333.0" mnemonicParsing="false" onAction="#OnActionbtnSave" prefHeight="42.0" prefWidth="120.0" text="Save">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="435.0" layoutY="333.0" mnemonicParsing="false" onAction="#onActionbtnDelete" prefHeight="42.0" prefWidth="120.0" text="Delete">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblItems" layoutX="15.0" layoutY="390.0" onMouseClicked="#OnmouseClickTblItems" prefHeight="263.0" prefWidth="736.0">
+        <columns>
+          <TableColumn prefWidth="165.60000038146973" text="Item Code" />
+            <TableColumn prefWidth="164.0" text="Description" />
+          <TableColumn prefWidth="204.80001831054688" text="Unite Price" />
+            <TableColumn prefWidth="202.39996337890625" text="Quantity" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="68.0" fitWidth="76.0" layoutX="337.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/items.png" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_RIGHT" layoutX="70.0" layoutY="294.0" prefHeight="18.0" prefWidth="86.0" text="Quantity">
+         <font>
+            <Font name="Bodoni MT Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" layoutX="166.0" layoutY="286.0" prefHeight="41.0" prefWidth="390.0" />
+   </children>
+</AnchorPane>

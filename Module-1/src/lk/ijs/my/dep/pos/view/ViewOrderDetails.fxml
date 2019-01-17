@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="489.0" prefWidth="777.0" stylesheets="@style/ViewDetailsList.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijs.my.dep.pos.controler.ViewOrderDetailListControter">
+   <children>
+      <ImageView fitHeight="529.0" fitWidth="832.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images%20(2).jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBack" layoutX="591.0" layoutY="20.0" mnemonicParsing="false" onAction="#onActionBtnBack" prefHeight="46.0" prefWidth="154.0" text="Back">
+         <font>
+            <Font name="Droid Sans Bold" size="24.0" />
+         </font>
+      </Button>
+      <TableView fx:id="lblViewDetails" fixedCellSize="0.0" layoutX="9.0" layoutY="212.0" onMouseClicked="#OnMouseClickPlaceOrderDetails" prefHeight="289.0" prefWidth="778.0">
+        <columns>
+          <TableColumn prefWidth="157.0" text="Item Code" />
+          <TableColumn prefWidth="156.0" text="Description" />
+            <TableColumn prefWidth="166.0" text="Unite Price" />
+            <TableColumn prefWidth="186.0" text="Quantity" />
+            <TableColumn prefWidth="124.0" text="Total" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnDelete" layoutX="591.0" layoutY="113.0" mnemonicParsing="false" onAction="#onActionBtndelete" prefHeight="46.0" prefWidth="154.0" text="Delete">
+         <font>
+            <Font name="Droid Sans Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="43.0" prefHeight="16.0" prefWidth="253.0" text="Place Order ID" textFill="#22180233">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Separator layoutX="578.0" layoutY="-22.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="632.0" layoutY="90.0" prefWidth="200.0" />
+      <Separator layoutY="90.0" prefHeight="3.0" prefWidth="644.0" />
+      <Label fx:id="lblPID" layoutX="239.0" layoutY="43.0" prefHeight="35.0" prefWidth="167.0" style="-fx-background-color: white;" text="Label">
+         <font>
+            <Font name="Cantarell Light" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="528.0" fitWidth="200.0" layoutX="795.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="794.0" layoutY="-1.0" prefHeight="529.0" prefWidth="200.0" style="-fx-background-color: yellow;" />
+      <ImageView fitHeight="150.0" fitWidth="179.0" layoutX="805.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/xx.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="805.0" layoutY="485.0" prefHeight="16.0" prefWidth="180.0" text="Created By Gihan">
+         <font>
+            <Font name="Droid Serif Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
