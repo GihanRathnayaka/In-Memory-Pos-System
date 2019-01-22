@@ -1,6 +1,6 @@
 # In Memory JavaFx Pos System
 
-This project created without using database server and Data Store in in memory of computer
+This project created without using database server and Data Store in memory of computer
  
 ## Technologies Used
 * javafx
